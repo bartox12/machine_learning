@@ -1,33 +1,21 @@
 # Machine Learning
 
-Solutions to lab assignments from a university Machine Learning course. Each lab lives in its own folder as a Jupyter notebook, together with a short README describing its scope. Notebook comments are written in Polish.
+Solutions to lab assignments from two university machine learning courses.
 
-## Contents
+## [Intro to Machine Learning](intro_to_ml)
+
+Classic ML fundamentals in scikit-learn and PyTorch (notebook comments in Polish):
+data preprocessing, clustering, linear & logistic regression, trees and ensembles,
+SVM, dimensionality reduction, neural networks, NLP sentiment analysis.
+
+## [ML for Data Scientists](ml_for_data_scientist)
+
+Advanced topics (in English):
 
 | Lab | Topic | Highlights |
 |-----|-------|------------|
-| [01](lab01_data_preprocessing) | Data preprocessing | EDA, missing values, scaling, one-hot encoding, train/test split |
-| [02](lab02_clustering) | Clustering | k-means implemented from scratch (k-means++ init), KMeans / Agglomerative / DBSCAN, silhouette score, customer segmentation |
-| [03](lab03_linear_logistic_regression) | Linear & logistic regression | OLS implemented from scratch, regression metrics, sigmoid, Titanic survival classification |
-| [04](lab04_trees_and_ensembles) | Trees & ensembles | Decision trees, random forest, AdaBoost, gradient boosting, XGBoost |
-| [05](lab05_svm) | Support Vector Machines | Linear SVM trained from scratch, kernels, cross-validation, GridSearchCV |
-| [06](lab06_dimensionality_reduction) | Dimensionality reduction | PCA, LDA, eigenfaces on the LFW face dataset |
-| [07](lab07_pytorch_neural_networks) | Neural networks (PyTorch) | Tensors, regression & classification nets, activation functions, Adam vs SGD, overfitting |
-| [08](lab08_nlp_sentiment_analysis) | NLP: sentiment analysis | IMDB reviews, text cleaning with NLTK, TF-IDF, logistic regression |
-
-## Data
-
-The `data/` folder contains the datasets loaded from disk by labs 01–03:
-
-- `titan.csv` — [Titanic](https://www.kaggle.com/c/titanic) passenger data
-- `housing.csv` — [California Housing](https://github.com/ageron/handson-ml2/tree/master/datasets/housing)
-- `Mall_Customers.csv` — [Mall Customer Segmentation](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python)
-
-The remaining labs use datasets built into scikit-learn or downloaded at runtime.
-
-## Setup
-
-```bash
-pip install -r requirements.txt
-jupyter lab
-```
+| [02](ml_for_data_scientist/lab02_model_interpretability) | Model interpretability | SHAP on a Random Forest (Adult Income), LIME on a pretrained ResNet50 |
+| [03](ml_for_data_scientist/lab03_probabilistic_ml) | Probabilistic ML & time series | Bayesian linear regression (PyMC, MCMC), Gaussian Processes, ARIMA on stock prices |
+| [05](ml_for_data_scientist/lab05_generative_models) | Generative models | VAE from scratch, DCGAN on CIFAR-10 with FID tracking, VAE anomaly detection |
+| [06](ml_for_data_scientist/lab06_transfer_and_few_shot_learning) | Transfer & few-shot learning | ResNet50 fine-tuning (cats vs dogs), Prototypical Networks on Omniglot |
+| [07](ml_for_data_scientist/lab07_federated_learning_mlops) | Federated learning & MLOps | Flower simulation, differential privacy, DVC + MLflow + FastAPI + Docker |

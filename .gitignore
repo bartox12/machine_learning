@@ -2,4 +2,8 @@
 .ipynb_checkpoints/
 __pycache__/
 .venv/
-data/housing_prepared.csv
+mlruns/
+mlflow.db
+intro_to_ml/data/housing_prepared.csv
+ml_for_data_scientist/lab05_generative_models/data/
+ml_for_data_scientist/lab06_transfer_and_few_shot_learning/data/
